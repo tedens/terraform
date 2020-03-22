@@ -1,6 +1,9 @@
-output "pub_ec2" {
-    value = aws_instance.pub.public_ip
+output "wp" {
+    value = aws_instance.wp.public_ip
 }
-output "priv_ec2" {
-  value = aws_instance.priv.private_ip
+output "bastion" {
+  value = aws_instance.bastion.public_ip
+}
+output "db" {
+  value = aws_instance.db.private_ip
 }
